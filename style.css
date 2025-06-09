@@ -2,6 +2,15 @@
   font-family: monospace;
 }
 
+a {
+  color: rgb(102, 207, 252);
+  text-decoration: none;
+}
+
+a.project {
+  color: rgb(237, 116, 112);
+}
+
 body {
   background-color: #000;
   color: rgb(225, 226, 226);
@@ -10,13 +19,9 @@ body {
   max-width: 80em;
 }
 
-a {
-  color: rgb(102, 207, 252);
-  text-decoration: none;
-}
-
-a.project {
-  color: rgb(237, 116, 112);
+footer {
+  margin-top: 5em;
+  text-align: right;
 }
 
 h1, h2, h3, h4, h5 {
