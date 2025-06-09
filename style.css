@@ -18,9 +18,10 @@ a.project {
 body {
   background-color: #000;
   color: rgb(225, 226, 226);
+  font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto;
-  max-width: 80em;
+  max-width: 72em;
 }
 
 footer {
@@ -30,6 +31,16 @@ footer {
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: inside square;
+  margin: 0;
+  padding: 0;
 }
 
 pre {
