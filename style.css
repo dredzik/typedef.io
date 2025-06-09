@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+a.image {
+  color: rgb(149, 252, 203);
+}
+
 a.project {
   color: rgb(237, 116, 112);
 }
