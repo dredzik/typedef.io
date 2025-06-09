@@ -4,5 +4,16 @@
 
 body {
   background-color: #000;
-  color: #fff;
+  color: rgb(225, 226, 226);
+  margin: 0 auto;
+  max-width: 80em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+a {
+  color: rgb(102, 207, 252);
+  text-decoration: none;
 }
