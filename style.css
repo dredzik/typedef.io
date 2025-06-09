@@ -5,15 +5,24 @@
 body {
   background-color: #000;
   color: rgb(225, 226, 226);
+  line-height: 1.5em;
   margin: 0 auto;
   max-width: 80em;
+}
+
+a {
+  color: rgb(102, 207, 252);
+  text-decoration: none;
+}
+
+a.project {
+  color: rgb(237, 116, 112);
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
 
-a {
-  color: rgb(102, 207, 252);
-  text-decoration: none;
+pre {
+  line-height: normal;
 }
