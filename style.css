@@ -11,8 +11,17 @@ a.image {
   color: rgb(149, 252, 203);
 }
 
+a#audio-tape-play {
+  color: rgb(149, 252, 203);
+  cursor: pointer;
+}
+
 a.project {
   color: rgb(237, 116, 112);
+}
+
+audio {
+  display: none;
 }
 
 body {

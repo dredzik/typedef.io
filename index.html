@@ -61,8 +61,20 @@
       <li>I have moved to London, United Kingdom.</li>
     </ul>
 
+    <audio controls="" id="audio-tape">
+      <source src="./static-data/tape/tape.mp3" type="audio/mpeg"></source>
+    </audio>
+
     <footer>
-      <p>Copyright © 2025 Adam Kuczyński. All Rights Reserved.</p>
+      <p>Copyright © 2025 Adam Kuczyński. All Rights Reserved. <a id="audio-tape-play" class="image">Hear me cry.</a></p>
     </footer>
+
+    <script type="text/javascript">
+      var button = document.getElementById('audio-tape-play');
+      button.onclick = function () {
+        var audio = document.getElementById('audio-tape');
+        audio.paused ? audio.play() : audio.pause();
+      }
+    </script>
   </body>
 </html>
