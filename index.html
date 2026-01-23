@@ -29,9 +29,36 @@
 
     <h2>disclaimer</h2>
 
-    <p>This page is meant to serve as a general dump of things I have done over the years. It is updated when I have the time and will to do it - which is to say - not often. I have added this sentence as otherwise the disclaimer would be quite short and wouldn't serve as a thick spacer between the header and the content section of this page. That will tell you everything you need to know about me.</p>
+    <p>
+      This page is meant to serve as a general dump of things I have done over the years. It is
+      updated when I have the time and will to do it - which is to say - not often. I have added
+      this sentence as otherwise the disclaimer would be quite short and wouldn't serve as a thick
+      spacer between the header and the content section of this page. That will tell you everything
+      you need to know about me.
+    </p>
 
     <h2>projects</h2>
+
+    <h3>2026</h3>
+
+    <ul>
+       <li>
+          [<a class="project" href="https://github.com/sheffieldhackspace/train-signs">train-signs</a>]
+
+               Overhaul of the C++ BigClock library. The library was originally written in the
+          Nottingham Hackspace as a driver for the <a href="https://www.infotec.co.uk/">Infotec</a>
+           radio clock. The original proprietary control boards were removed, and replaced with an
+             Arduino Uno. I have migrated the project from Arduino Uno to Arduino Nano ESP32 for
+              better performance, built-in WiFi, and USB-C connectivity. I have designed a new
+           prototype and a PCB for the driver. I have refactored the result of the initial reverse
+              engineering of the <a href="https://www.aegmis.de/">AEG-MIS</a> (now defunct) LCD
+                control layer, which resulted in a significantly reduced codebase, documented
+                 communication protocol, increased framerate, and reduced image flickering.
+
+          [<a class="image" href="./static-data/train-signs/schematic.png">schematic</a>]
+          [<a class="image" href="./static-data/train-signs/prototype.jpeg">prototype</a>]
+          [<a href="https://youtu.be/5Apyo8lDx-Y">performance</a>]
+       </li>
 
     <h3>2025</h3>
 
@@ -69,7 +96,7 @@
     <h3>2016</h3>
 
     <ul>
-      <li>[<a class="project" href="https://github.com/dredzik/polarbtdump">polarbtdump</a>] Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a> M400 watch over Bluetooth, written in Swift 3. I got it to the stage where I could dump the contents of the watch filesystem into my local machine. I didn't have enough motivation to write the data transformation part. Later on I discovered climbing and have abandoned running as a sport. 
+      <li>[<a class="project" href="https://github.com/dredzik/polarbtdump">polarbtdump</a>] Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a> M400 watch over Bluetooth, written in Swift 3. I got it to the stage where I could dump the contents of the watch filesystem into my local machine. I didn't have enough motivation to write the data transformation part. Later on I discovered climbing and have abandoned running as a sport.
       <li>[<a class="project" href="https://github.com/dredzik/polarspoofer">polarspoofer</a>] Command line tool to eavesdrop on the Bluetooth communication between <a href="https://www.polar.com/">Polar</a> M400 watch and an iPhone device, written in Swift 2. It was meant to be a dirty and fast proxy.
       <li>[<a class="project" href="https://github.com/dredzik/polarusbdump">polarusbdump</a>] Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a> M400 watch over USB, written in Java. It never got past a proof-of-concept stage as I focused on reverse engineering the Bluetooth communication.
       <li>I have moved to London, United Kingdom.</li>
