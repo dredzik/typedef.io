@@ -39,21 +39,54 @@
 
     <h2>projects</h2>
 
-    <h3>2026</h3>
+    <h3>March 2026</h3>
+
+    <ul>
+      <li>
+        [<a class="project" href="https://github.com/dredzik/dot-widget">dot-widget</a>]
+
+             A composable rendering pipeline for small LED matrix displays. Provides text and
+          image widgets built on top of the Adafruit GFX library, with a container-based layout
+           system inspired by modern UI frameworks. Extracted from the train-signs and bus-signs
+            projects to provide a consistent rendering and HTTP API across different hardware.
+      </li>
+    </ul>
+
+    <h3>February 2026</h3>
+
+    <ul>
+      <li>
+        [<a class="project" href="https://github.com/sheffieldhackspace/bus-signs">bus-signs</a>]
+
+        Resurrection of the Hull bus terminal signs acquired by Sheffield Hackspace. The signs are
+        driven by AS1100 LED matrix controller chips arranged in two independent 192×9 pixel rows.
+          The original Arduino Uno was replaced with a Seeed Studio XIAO ESP32C3, significantly
+                               reducing the hardware footprint. The
+           <a href="https://github.com/ConnectedHumber/Bus-Terminal-Signs">original driver</a>
+                                  was rewritten into a standalone
+            <a class="project" href="https://github.com/sheffieldhackspace/AS1100">AS1100</a>
+        library using the Adafruit GFX and BusIO as a base. The dot-widget rendering pipeline was
+            integrated to provide a consistent HTTP API across both the train and bus signs.
+      </li>
+    </ul>
+
+    <h3>January 2026</h3>
 
     <ul>
       <li>
         [<a class="project" href="https://github.com/sheffieldhackspace/train-signs">train-signs</a>]
 
-             Overhaul of the C++ BigClock library. The library was originally written in the
-        Nottingham Hackspace as a driver for the <a href="https://www.infotec.co.uk/">Infotec</a>
-         radio clock. The original proprietary control boards were removed, and replaced with an
-           Arduino Uno. I have migrated the project from Arduino Uno to Arduino Nano ESP32 for
-            better performance, built-in WiFi, and USB-C connectivity. I have designed a new
-         prototype and a PCB for the driver. I have refactored the result of the initial reverse
-            engineering of the <a href="https://www.aegmis.de/">AEG-MIS</a> (now defunct) LCD
-              control layer, which resulted in a significantly reduced codebase, documented
-               communication protocol, increased framerate, and reduced image flickering.
+        Overhaul of the C++ BigClock library. The library was originally written in the Nottingham
+        Hackspace as a driver for the <a href="https://www.infotec.co.uk/">Infotec</a> radio clock.
+        The original proprietary control boards were removed, and replaced with an Arduino Uno.
+        I have migrated the project from Arduino Uno to Seeed Studio XIAO ESP32C3 for better
+        performance, built-in WiFi, and USB-C connectivity. I have designed a new prototype and a
+        PCB for the driver. I have refactored the result of the initial reverse engineering of the
+        <a href="https://www.aegmis.de/">AEG-MIS</a> (now defunct) display control layer, which
+        resulted in a significantly reduced codebase, documented communication protocol, increased
+        framerate, and reduced image flickering. The hardware driver was extracted into a standalone
+        <a class="project" href="https://github.com/sheffieldhackspace/AEGMIS_GV60">AEGMIS_GV60</a>
+        library.
 
         [<a class="image" href="./static-data/train-signs/schematic.png">schematic</a>]
         [<a class="image" href="./static-data/train-signs/prototype.jpeg">prototype</a>]
@@ -71,7 +104,7 @@
         The original implementation was written in C++ and for a different platform. Since I
         wanted to learn a bit more about Micropython and SDR, I took this as an opportunity to
         learn. Half way through I realised that my water meter is not really compatible with the
-        software, but not before I identified a few improvements that could be made to the 
+        software, but not before I identified a few improvements that could be made to the
         reverse engineered communications protocol.
       </li>
 
