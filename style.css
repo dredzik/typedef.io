@@ -33,6 +33,10 @@ body {
   max-width: 72em;
 }
 
+section.year + section.year {
+  margin-top: 3em;
+}
+
 footer {
   margin-top: 5em;
   text-align: right;
