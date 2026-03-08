@@ -23,8 +23,6 @@
         [<a href="https://www.sheffieldhackspace.org.uk">sheffield hackspace</a>]
         [<a href="https://www.ukclimbing.com/logbook/showlog.php?id=224060">ukclimbing</a>]
       </p>
-    </ul>
-
     </header>
 
     <h2>disclaimer</h2>
@@ -40,151 +38,281 @@
     <h2>projects</h2>
 
     <section class="year">
-    <p>
-      <em>Mar 2026</em>
+      <p>
+        <em>Mar 2026</em>
 
-      [<a class="project" href="https://github.com/dredzik/dot-widget">dredzik/dot-widget</a>]
+        [<a class="project" href="https://github.com/dredzik/dot-widget">dredzik/dot-widget</a>]
 
-      A composable rendering pipeline for small LED matrix displays. Provides text and image widgets
+        A composable rendering pipeline for small LED matrix displays. Provides text and image widgets
         built on top of the Adafruit GFX library, with a container-based layout system inspired by
-         modern UI frameworks. Extracted from the train-signs and bus-signs projects to provide a
-                       consistent rendering and HTTP API across different hardware.
-    </p>
+        modern UI frameworks. Extracted from the train-signs and bus-signs projects to provide a
+        consistent rendering and HTTP API across different hardware.
+      </p>
 
-    <p>
-      <em>Feb 2026</em>
+      <p>
+        <em>Feb 2026</em>
 
-      [<a class="project" href="https://github.com/sheffieldhackspace/bus-signs">sheffield-hackspace/bus-signs</a>]
+        [<a class="project" href="https://github.com/sheffieldhackspace/bus-signs">sheffield-hackspace/bus-signs</a>]
 
-      Resurrection of the Hull bus terminal signs acquired by Sheffield Hackspace. The signs are
-      driven by AS1100 LED matrix controller chips arranged in two independent 192×9 pixel rows.
-      The original Arduino Uno was replaced with a Seeed Studio XIAO ESP32C3, significantly
-      reducing the hardware footprint. The
-      <a href="https://github.com/ConnectedHumber/Bus-Terminal-Signs">original driver</a>
-      was rewritten into a standalone
-      <a class="project" href="https://github.com/sheffieldhackspace/AS1100">AS1100</a>
-      library using the Adafruit GFX and BusIO as a base. The dot-widget rendering pipeline was
-      integrated to provide a consistent HTTP API across both the train and bus signs.
-    </p>
+        Resurrection of the Hull bus terminal signs acquired by Sheffield Hackspace. The signs are
+        driven by AS1100 LED matrix controller chips arranged in two independent 192×9 pixel rows.
+        The original Arduino Uno was replaced with a Seeed Studio XIAO ESP32C3, significantly
+        reducing the hardware footprint. The
+        <a href="https://github.com/ConnectedHumber/Bus-Terminal-Signs">original driver</a>
+        was rewritten into a standalone
+        <a class="project" href="https://github.com/sheffieldhackspace/AS1100">AS1100</a>
+        library using Adafruit GFX and BusIO as a base. The dot-widget rendering pipeline was
+        integrated to provide a consistent HTTP API across both the train and bus signs.
+      </p>
 
-    <p>
-      <em>Jan 2026</em>
+      <p>
+        <em>Jan 2026</em>
 
-      [<a class="project" href="https://github.com/sheffieldhackspace/train-signs">sheffield-hackspace/train-signs</a>]
+        [<a class="project" href="https://github.com/sheffieldhackspace/train-signs">sheffield-hackspace/train-signs</a>]
 
-      Overhaul of the C++ BigClock library. The library was originally written in the Nottingham
-      Hackspace as a driver for the <a href="https://www.infotec.co.uk/">Infotec</a> radio clock.
-      The original proprietary control boards were removed, and replaced with an Arduino Uno.
-      I have migrated the project from Arduino Uno to Seeed Studio XIAO ESP32C3 for better
-      performance, built-in WiFi, and USB-C connectivity. I have designed a new prototype and a
-      PCB for the driver. I have refactored the result of the initial reverse engineering of the
-      <a href="https://www.aegmis.de/">AEG-MIS</a> (now defunct) display control layer, which
-      resulted in a significantly reduced codebase, documented communication protocol, increased
-      framerate, and reduced image flickering. The hardware driver was extracted into a standalone
-      <a class="project" href="https://github.com/sheffieldhackspace/AEGMIS_GV60">AEGMIS_GV60</a>
-      library.
+        Overhaul of the C++ BigClock library. The library was originally written in the Nottingham
+        Hackspace as a driver for the <a href="https://www.infotec.co.uk/">Infotec</a> radio clock.
+        The original proprietary control boards were removed, and replaced with an Arduino Uno.
+        I have migrated the project from Arduino Uno to Seeed Studio XIAO ESP32C3 for better
+        performance, built-in WiFi, and USB-C connectivity. I have designed a new prototype and a
+        PCB for the driver. I have refactored the result of the initial reverse engineering of the
+        <a href="https://www.aegmis.de/">AEG-MIS</a> (now defunct) display control layer, which
+        resulted in a significantly reduced codebase, documented communication protocol, increased
+        framerate, and reduced image flickering. The hardware driver was extracted into a standalone
+        <a class="project" href="https://github.com/sheffieldhackspace/AEGMIS_GV60">AEGMIS_GV60</a>
+        library.
 
-      [<a class="image" href="./static-data/train-signs/schematic.png">schematic</a>]
-      [<a class="image" href="./static-data/train-signs/prototype.jpeg">prototype</a>]
-      [<a href="https://youtu.be/5Apyo8lDx-Y">performance</a>]
-    </p>
+        [<a class="image" href="./static-data/train-signs/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/train-signs/prototype.jpeg">prototype</a>]
+        [<a href="https://youtu.be/5Apyo8lDx-Y">performance</a>]
+      </p>
     </section>
 
     <section class="year">
-    <p>
-      <em>Nov 2025</em>
+      <p>
+        <em>Nov 2025</em>
 
-      [<a class="project" href="https://github.com/dredzik/esp32-cc1101-cyble-micropython">esp32-cc1101-cyble-micropython</a>]
+        [<a class="project" href="https://github.com/dredzik/esp32-cc1101-cyble-micropython">esp32-cc1101-cyble-micropython</a>]
 
-      An incomplete Micropython implementation of the water meter reader for home assistant.
-      The original implementation was written in C++ and for a different platform. Since I
-      wanted to learn a bit more about Micropython and SDR, I took this as an opportunity to
-      learn. Half way through I realised that my water meter is not really compatible with the
-      software, but not before I identified a few improvements that could be made to the
-      reverse engineered communications protocol.
-    </p>
+        An incomplete Micropython implementation of the water meter reader for home assistant.
+        The original implementation was written in C++ and for a different platform. Since I
+        wanted to learn a bit more about Micropython and SDR, I took this as an opportunity to
+        learn. Half way through I realised that my water meter is not really compatible with the
+        software, but not before I identified a few improvements that could be made to the
+        reverse engineered communications protocol.
+      </p>
 
-    <p>
-      <em>Nov 2025</em>
+      <p>
+        <em>Nov 2025</em>
 
-      [<a class="project" href="https://github.com/dredzik/guitar-effect-components">guitar-effect-components</a>]
+        [<a class="project" href="https://github.com/dredzik/guitar-effect-components">guitar-effect-components</a>]
 
-      Guitar effect components project is an attempt at documenting some common elements that I
-      found when analyzing guitar effect circuits. I hope to add more details to each component
-      as I discover the intention behind the variations. This should allow me to choose my own
-      favourite and improve on it.
-    </p>
+        Guitar effect components project is an attempt at documenting some common elements that I
+        found when analyzing guitar effect circuits. I hope to add more details to each component
+        as I discover the intention behind the variations. This should allow me to choose my own
+        favourite and improve on it.
+      </p>
 
-    <p>
-      <em>Oct 2025</em>
+      <p>
+        <em>Oct 2025</em>
 
-      [<a class="project" href="https://www.ukclimbing.com/logbook/crags/birchen_edge-94/emmas_dilemma-11205">Emma's Dilemma S 4a</a>]
-      [<a class="project" href="https://www.ukclimbing.com/logbook/crags/birchen_edge-94/the_bow-11233">The Bow S 4a</a>]
+        [<a class="project" href="https://www.ukclimbing.com/logbook/crags/birchen_edge-94/emmas_dilemma-11205">Emma's Dilemma S 4a</a>]
+        [<a class="project" href="https://www.ukclimbing.com/logbook/crags/birchen_edge-94/the_bow-11233">The Bow S 4a</a>]
 
-      I have successfully led two more Severe routes. While they are of the same grade,
-      the experiences were quite different — the first sporting a hard start leading to
-      a pumped-out finish, and the second a sketchy middle with a runout top.
-    </p>
+        I have successfully led two more Severe routes. While they are of the same grade,
+        the experiences were quite different — the first sporting a hard start leading to
+        a pumped finish, and the second a sketchy middle with a runout top.
+      </p>
 
-    <p>
-      <em>Jul 2025</em>
+      <p>
+        <em>Aug 2025</em>
 
-      [<a class="project" href="https://github.com/dredzik/3d-models/blob/main/Blackstar%20Amped1%20Stand.scad">Blackstar Amped1 Stand</a>]
+        [<a class="project" href="https://github.com/dredzik/parametric-equalizer">&#128274;parametric-equalizer</a>]
 
-       A stand for Blackstar Amped1 amplifier. It provides front panel passthroughs for input
-      jacks and pedal power, using <a href="https://templeaudio.com/">Temple Audio</a> 4X mod.
-          I have generated the STL-s using OpenSCAD, as an alternative to Autodesk Fusion.
+        Parametric equalizer guitar effect pedal. The circuit is based on 3 RLC filter sections
+        with the variable inductor implemented using a TL07x operational amplifier. This is my
+        first project using surface mounted components. I have learned how to use an OpAmp to
+        implement a buffer and an amplifier; how an RLC filter works; how to use an OpAmp and an
+        RLC filter to shape the frequency response of a circuit. I have also learned that ICL7660
+        is not the same as ICL7660S and it makes an awful lot of noise difference.
 
-      [<a class="image" href="./static-data/blackstar-amped1-stand/stand1.jpeg">picture 1</a>]
-      [<a class="image" href="./static-data/blackstar-amped1-stand/stand2.jpeg">picture 2</a>]
-      [<a class="image" href="./static-data/blackstar-amped1-stand/stand3.jpeg">picture 3</a>]
-    </p>
+        [<a class="image" href="./static-data/parametric-equalizer/prototype.jpeg">prototype</a>]
+        [<a class="image" href="./static-data/parametric-equalizer/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/parametric-equalizer/pcb.png">pcb</a>]
+        [<a class="image" href="./static-data/parametric-equalizer/pedal.jpeg">pedal</a>]
+      </p>
 
-    <p>
-      <em>Jun 2025</em>
+      <p>
+        <em>Jul 2025</em>
 
-      [<a class="project" href="https://github.com/dredzik/avr-programmer">&#128274;avr-programmer</a>]
+        [<a class="project" href="https://github.com/dredzik/3d-models/blob/main/Blackstar%20Amped1%20Stand.scad">Blackstar Amped1 Stand</a>]
 
-      An <a href="https://www.microchip.com/en-us/product/attiny13">ATTiny13</a> programmer PCB
-      that utilises an <a href="https://docs.arduino.cc/hardware/nano-esp32/">Arduino Nano ESP32</a>
-      and a <a href="https://www.tag-connect.com/">Tag Connect</a> cable to program IC-s on my
-      guitar pedals. I was previously programming the IC-s using a DIP-8 socket. Since migrating
-      to SMT, I decided to use the JTAG connector with pogo pins to program the controller
-      directly on the PCB.
+        A stand for Blackstar Amped1 amplifier. It provides front panel passthroughs for input
+        jacks and pedal power, using <a href="https://templeaudio.com/">Temple Audio</a> 4X mod.
+        I have generated the STL-s using OpenSCAD, as an alternative to Autodesk Fusion.
 
-      [<a class="image" href="./static-data/avr-programmer/schematic.png">schematic</a>]
-      [<a class="image" href="./static-data/avr-programmer/pcb.png">pcb</a>]
-      [<a class="image" href="./static-data/avr-programmer/programmer.jpeg">programmer</a>]
-    </p>
+        [<a class="image" href="./static-data/blackstar-amped1-stand/stand1.jpeg">picture 1</a>]
+        [<a class="image" href="./static-data/blackstar-amped1-stand/stand2.jpeg">picture 2</a>]
+        [<a class="image" href="./static-data/blackstar-amped1-stand/stand3.jpeg">picture 3</a>]
+      </p>
 
-    <p>[<a class="project" href="https://github.com/dredzik/parametric-equalizer">&#128274;parametric-equalizer</a>] Parametric equalizer guitar effect pedal. The circuit is based on 3 RLC filter sections with the variable inductor implemented using a TL07x operational amplifier. This is my first project using surface mounted components. I have learned how to use an OpAmp to implement a buffer and an amplifier; how an RLC filter works; how to use an OpAmp and an RLC filter to shape the frequency response of a circuit. I have also learned that ICL7660 is not the same as ICL7660S and it makes an awful lot of noise difference. [<a class="image" href="./static-data/parametric-equalizer/prototype.jpeg">prototype</a>] [<a class="image" href="./static-data/parametric-equalizer/schematic.png">schematic</a>] [<a class="image" href="./static-data/parametric-equalizer/pcb.png">pcb</a>] [<a class="image" href="./static-data/parametric-equalizer/pedal.jpeg">pedal</a>]</p>
+      <p>
+        <em>Jun 2025</em>
 
-    <p>[<a class="project" href="https://www.ukclimbing.com/logbook/crags/birchen_edge-94/reef_knot-11260">Reef Knot S 4b</a>] I have led my first Severe route. It is just a glorified high-ball boulder problem with minimum protection. Still counts.</p>
+        [<a class="project" href="https://github.com/dredzik/avr-programmer">&#128274;avr-programmer</a>]
 
-    <p>[<a class="project" href="https://github.com/dredzik/waveform-generator">&#128274;waveform-generator</a>] Sin-wave generator for guitar input simulation using the DaisyDSP platform. I have used the <a href="https://electro-smith.com/products/daisy-seed">DaisySeed</a> hardware, a potentiometer for frequency control, and a small I2C OLED display for current frequency value. Using ST-Link v3 Mini as a programmer. Written in C++. [<a class="image" href="./static-data/waveform-generator/prototype.jpeg">prototype</a>] [<a class="image" href="./static-data/waveform-generator/output.mov">output</a>]</p>
+        An <a href="https://www.microchip.com/en-us/product/attiny13">ATTiny13</a> programmer PCB
+        that utilises an <a href="https://docs.arduino.cc/hardware/nano-esp32/">Arduino Nano ESP32</a>
+        and a <a href="https://www.tag-connect.com/">Tag Connect</a> cable to program IC-s on my
+        guitar pedals. I was previously programming the IC-s using a DIP-8 socket. Since migrating
+        to SMT, I decided to use the JTAG connector with pogo pins to program the controller
+        directly on the PCB.
 
-    <p>[<a class="project" href="https://github.com/dredzik/meater">&#128274;meater</a>] Reverse engineer of the <a href="https://meater.com/">Meater</a> food temperature monitor. The original device requires a phone app and an account in their system. I have used the <a href="https://docs.arduino.cc/hardware/nano-esp32/">Arduino Nano ESP32</a> hardware, and a small I2C OLED display to display the current temperature. Written in Micropython.</p>
+        [<a class="image" href="./static-data/avr-programmer/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/avr-programmer/pcb.png">pcb</a>]
+        [<a class="image" href="./static-data/avr-programmer/programmer.jpeg">programmer</a>]
+      </p>
 
-    <p>[<a class="project" href="https://github.com/dredzik/relay-switch">&#128274;relay-switch</a>] A true bypass switch for guitar effect pedals using an <a href="https://www.microchip.com/en-us/product/attiny13">ATTiny13</a> microcontroller and a latching DPDT signal relay. Meant to be used as a submodule in other guitar effect projects. Written in Arduino C++. [<a class="image" href="./static-data/relay-switch/schematic.png">schematic</a>]</p>
+      <p>
+        <em>Jun 2025</em>
 
-    <p>[<a class="project" href="https://github.com/dredzik/fuzz-factory">&#128274;fuzz-factory</a>] A clone of the <a href="https://www.zvex.com/guitar-pedals/fuzz-factory-guitar-effects-pedal">ZVEX Effects Fuzz Factory</a>. The original format was quite annoying, given it's horizontal orientation and input jacks on the sides. My aim was to make it fit the one true enclosure size and configuration. [<a class="image" href="./static-data/fuzz-factory/schematic.png">schematic</a>] [<a class="image" href="./static-data/fuzz-factory/pcb.png">pcb</a>] [<a class="image" href="./static-data/fuzz-factory/pedal.jpeg">pedal</a>]</p>
+        [<a class="project" href="https://github.com/dredzik/relay-switch">&#128274;relay-switch</a>]
 
-    <p>[<a class="project" href="https://github.com/dredzik/germanium-fuzz">&#128274;germanium-fuzz</a>] My take on the original <a href="https://electrosmash.com/germanium-fuzz">Germanium Fuzz Face</a>. Built with AC128 transistors I found on Ebay. The reverse polarity is implemented across +9V to GND instead of GND to -9V. I have standardised the switching mechanism, enclosure size, and potentiometer positions. [<a class="image" href="./static-data/germanium-fuzz/schematic.png">schematic</a>] [<a class="image" href="./static-data/germanium-fuzz/pcb.png">pcb</a>] [<a class="image" href="./static-data/germanium-fuzz/pedal.jpeg">pedal</a>]</p>
-  </section>
+        A true bypass switch for guitar effect pedals using an
+        <a href="https://www.microchip.com/en-us/product/attiny13">ATTiny13</a> microcontroller
+        and a latching DPDT signal relay. Meant to be used as a submodule in other guitar effect
+        projects. Written in Arduino C++.
 
-  <section class="year">
-  <ul>
-    <li>[<a class="project" href="https://github.com/dredzik/fuzz-face">&#128274;fuzz-face</a>] Silicon NPN transistor fuzz face guitar effect pedal. This is a very simple circuit that became my first adventure into analog audio effects. I have (re-)learned basics of the electronic circuits, basics of analog audio processing, how to use KiCAD to design a PCB, how to horribly mess up said PCB, how to place a manufacturing order, how to be patient while waiting on the order, how to solder, how to debug your mistakes, how to use oscilloscope, how to design 3d models for printing enclosures, how to design 3d models for printing jigs to drill into the aluminum enclosures. All of my "best practices" come from continuous improvement of this circuit whenever I have learned a new thing. Thank you <a href="https://jhspedals.info/">JHS Pedals</a> for showing me a new hobby and <a href="https://www.walrusaudio.com/">Walrus Audio</a> for inspiration. [<a class="image" href="./static-data/fuzz-face/schematic.png">schematic</a>] [<a class="image" href="./static-data/fuzz-face/pcb.png">pcb</a>] [<a class="image" href="./static-data/fuzz-face/pedal.jpeg">pedal</a>]</li>
-    </ul>
+        [<a class="image" href="./static-data/relay-switch/schematic.png">schematic</a>]
+      </p>
+
+      <p>
+        <em>May 2025</em>
+
+        [<a class="project" href="https://www.ukclimbing.com/logbook/crags/birchen_edge-94/reef_knot-11260">Reef Knot S 4b</a>]
+
+        I have led my first Severe route. It is just a glorified high-ball boulder problem with
+        minimum protection. Still counts.
+      </p>
+
+      <p>
+        <em>Mar 2025</em>
+
+        [<a class="project" href="https://github.com/dredzik/waveform-generator">&#128274;waveform-generator</a>]
+
+        Sin-wave generator for guitar input simulation using the DaisyDSP platform. I have used
+        the <a href="https://electro-smith.com/products/daisy-seed">DaisySeed</a> hardware, a
+        potentiometer for frequency control, and a small I2C OLED display for current frequency
+        value. Using ST-Link v3 Mini as a programmer. Written in C++.
+
+        [<a class="image" href="./static-data/waveform-generator/prototype.jpeg">prototype</a>]
+        [<a class="image" href="./static-data/waveform-generator/output.mov">output</a>]
+      </p>
+
+      <p>
+        <em>Mar 2025</em>
+
+        [<a class="project" href="https://github.com/dredzik/meater">&#128274;meater</a>]
+
+        Reverse engineer of the <a href="https://meater.com/">Meater</a> food temperature monitor.
+        The original device requires a phone app and an account in their system. I have used the
+        <a href="https://docs.arduino.cc/hardware/nano-esp32/">Arduino Nano ESP32</a> hardware,
+        and a small I2C OLED display to display the current temperature. Written in Micropython.
+      </p>
+
+      <p>
+        <em>Feb 2025</em>
+
+        [<a class="project" href="https://github.com/dredzik/fuzz-factory">&#128274;fuzz-factory</a>]
+
+        A clone of the <a href="https://www.zvex.com/guitar-pedals/fuzz-factory-guitar-effects-pedal">ZVEX Effects Fuzz Factory</a>.
+        The original format was quite annoying, given its horizontal orientation and input jacks
+        on the sides. My aim was to make it fit the one true enclosure size and configuration.
+
+        [<a class="image" href="./static-data/fuzz-factory/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/fuzz-factory/pcb.png">pcb</a>]
+        [<a class="image" href="./static-data/fuzz-factory/pedal.jpeg">pedal</a>]
+      </p>
+
+      <p>
+        <em>Feb 2025</em>
+
+        [<a class="project" href="https://github.com/dredzik/germanium-fuzz">&#128274;germanium-fuzz</a>]
+
+        My take on the original <a href="https://electrosmash.com/germanium-fuzz">Germanium Fuzz Face</a>.
+        Built with AC128 transistors I found on Ebay. The reverse polarity is implemented across
+        +9V to GND instead of GND to -9V. I have standardised the switching mechanism, enclosure
+        size, and potentiometer positions.
+
+        [<a class="image" href="./static-data/germanium-fuzz/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/germanium-fuzz/pcb.png">pcb</a>]
+        [<a class="image" href="./static-data/germanium-fuzz/pedal.jpeg">pedal</a>]
+      </p>
     </section>
 
     <section class="year">
-    <ul>
-      <li>[<a class="project" href="https://github.com/dredzik/polarbtdump">polarbtdump</a>] Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a> M400 watch over Bluetooth, written in Swift 3. I got it to the stage where I could dump the contents of the watch filesystem into my local machine. I didn't have enough motivation to write the data transformation part. Later on I discovered climbing and have abandoned running as a sport.
-      <li>[<a class="project" href="https://github.com/dredzik/polarspoofer">polarspoofer</a>] Command line tool to eavesdrop on the Bluetooth communication between <a href="https://www.polar.com/">Polar</a> M400 watch and an iPhone device, written in Swift 2. It was meant to be a dirty and fast proxy.
-      <li>[<a class="project" href="https://github.com/dredzik/polarusbdump">polarusbdump</a>] Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a> M400 watch over USB, written in Java. It never got past a proof-of-concept stage as I focused on reverse engineering the Bluetooth communication.
-      <li>I have moved to London, United Kingdom.</li>
-    </ul>
+      <p>
+        <em>Dec 2024</em>
+
+        [<a class="project" href="https://github.com/dredzik/fuzz-face">&#128274;fuzz-face</a>]
+
+        Silicon NPN transistor fuzz face guitar effect pedal. This is a very simple circuit that
+        became my first adventure into analog audio effects. I have (re-)learned basics of the
+        electronic circuits, basics of analog audio processing, how to use KiCAD to design a PCB,
+        how to horribly mess up said PCB, how to place a manufacturing order, how to be patient
+        while waiting on the order, how to solder, how to debug your mistakes, how to use
+        oscilloscope, how to design 3d models for printing enclosures, how to design 3d models
+        for printing jigs to drill into the aluminum enclosures. All of my "best practices" come
+        from continuous improvement of this circuit whenever I have learned a new thing. Thank you
+        <a href="https://jhspedals.info/">JHS Pedals</a> for showing me a new hobby and
+        <a href="https://www.walrusaudio.com/">Walrus Audio</a> for inspiration.
+
+        [<a class="image" href="./static-data/fuzz-face/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/fuzz-face/pcb.png">pcb</a>]
+        [<a class="image" href="./static-data/fuzz-face/pedal.jpeg">pedal</a>]
+      </p>
+    </section>
+
+    <section class="year">
+      <p>
+        <em>Jul 2016</em>
+
+        [<a class="project" href="https://github.com/dredzik/polarbtdump">polarbtdump</a>]
+
+        Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a>
+        M400 watch over Bluetooth, written in Swift 3. I got it to the stage where I could dump
+        the contents of the watch filesystem into my local machine. I didn't have enough motivation
+        to write the data transformation part. Later on I discovered climbing and have abandoned
+        running as a sport.
+      </p>
+
+      <p>
+        <em>Jun 2016</em>
+
+        [<a class="project" href="https://github.com/dredzik/polarspoofer">polarspoofer</a>]
+
+        Command line tool to eavesdrop on the Bluetooth communication between
+        <a href="https://www.polar.com/">Polar</a> M400 watch and an iPhone device, written in
+        Swift 2. It was meant to be a dirty and fast proxy.
+      </p>
+
+      <p>
+        <em>Feb 2016</em>
+
+        I have moved to London, United Kingdom.
+      </p>
+    </section>
+
+    <section class="year">
+      <p>
+        <em>Nov 2015</em>
+
+        [<a class="project" href="https://github.com/dredzik/polarusbdump">polarusbdump</a>]
+
+        Command line tool to dump training data from <a href="https://www.polar.com/">Polar</a>
+        M400 watch over USB, written in Java. It never got past a proof-of-concept stage as I
+        focused on reverse engineering the Bluetooth communication.
+      </p>
     </section>
 
     <audio controls="" id="audio-tape">

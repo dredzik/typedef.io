@@ -2,6 +2,15 @@
   font-family: monospace;
 }
 
+body {
+  background-color: #000;
+  color: rgb(225, 226, 226);
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0 auto;
+  max-width: 72em;
+}
+
 a {
   color: rgb(102, 207, 252);
   text-decoration: none;
@@ -20,21 +29,24 @@ a.project {
   color: rgb(237, 116, 112);
 }
 
-audio {
-  display: none;
+pre {
+  line-height: normal;
 }
 
-body {
-  background-color: #000;
-  color: rgb(225, 226, 226);
-  font-size: 1.1em;
-  line-height: 1.5em;
-  margin: 0 auto;
-  max-width: 72em;
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
 }
 
 section.year + section.year {
   margin-top: 3em;
+}
+
+p {
+  margin-top: 1em;
+}
+
+audio {
+  display: none;
 }
 
 footer {
@@ -42,20 +54,3 @@ footer {
   text-align: right;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: normal;
-}
-
-li {
-  margin-bottom: 1em;
-}
-
-ul {
-  list-style: inside square;
-  margin: 0;
-  padding: 0;
-}
-
-pre {
-  line-height: normal;
-}
