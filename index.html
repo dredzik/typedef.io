@@ -49,45 +49,42 @@
       <p>
         <em>Mar 2026</em>
 
-        [<a class="project" href="https://github.com/dredzik/dot-widget">dredzik/dot-widget</a>]
+        [<a class="project" href="https://github.com/dredzik/dot-widget">dot-widget</a>]
 
-        A modular widget library for small LED matrix displays. Provides text and image widgets
-        built on top of the Adafruit GFX library, with a container-based layout system inspired by
-        modern UI frameworks. Extracted from the train-signs and bus-signs projects to provide a
-        consistent rendering interface across different hardware.
+        I built a widget library for small LED matrix displays. It handles text and images, and
+        uses a container layout system inspired by modern UI frameworks. I extracted it from my
+        bay-indicator and brunel-clock projects so both share the same rendering code. Having a
+        shared library means fixes and improvements in one place automatically benefit all
+        displays.
       </p>
 
       <p>
         <em>Feb 2026</em>
 
-        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-bay-indicator">sheffield-hackspace/display-infotec-bay-indicator</a>]
-        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-bay-indicator-server">sheffield-hackspace/display-infotec-bay-indicator-server</a>]
+        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-bay-indicator">bay-indicator-driver</a>]
+        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-bay-indicator-server">bay-indicator-server</a>]
 
-        Resurrection of the Hull bus terminal signs acquired by Sheffield Hackspace. The signs are
-        driven by AS1100 LED matrix controller chips arranged in two independent 192×9 pixel rows.
-        The original Arduino Uno was replaced with a Seeed Studio XIAO ESP32C3. The
+        I brought back a set of old Hull bus terminal signs that Sheffield Hackspace acquired.
+        Each of the two text rows is driven by 32 AS1100 LED matrix chips daisy-chained together,
+        giving a resolution of 192×9 pixels per row. I replaced the original Arduino Uno with a
+        Seeed Studio XIAO ESP32C3 and rewrote the
         <a href="https://github.com/ConnectedHumber/Bus-Terminal-Signs">original driver</a>
-        was rewritten into a standalone library using Adafruit GFX and BusIO as a base. The 
-        dot-widget library was integrated to provide a consistent rendering interface across both 
-        the train and bus signs.
+        as a standalone library using Adafruit GFX. The server exposes an HTTP API that accepts
+        JSON, so the display can be updated with a simple curl command.
       </p>
 
       <p>
         <em>Jan 2026</em>
 
-        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-brunel-clock">sheffield-hackspace/display-infotec-brunel-clock</a>]
-        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-brunel-clock-server">sheffield-hackspace/display-infotec-brunel-clock-server</a>]
+        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-brunel-clock">brunel-clock-driver</a>]
+        [<a class="project" href="https://github.com/sheffieldhackspace/display-infotec-brunel-clock-server">brunel-clock-server</a>]
 
-        Overhaul of the C++ BigClock library. The library was originally written in the Nottingham
-        Hackspace as a driver for the <a href="https://www.infotec.co.uk/">Infotec</a> radio clock.
-        The original proprietary control boards were removed, and replaced with an Arduino Uno.
-        I have migrated the project from Arduino Uno to Seeed Studio XIAO ESP32C3 for better
-        performance, built-in WiFi, and USB-C connectivity. I have designed a new prototype and a
-        PCB for the driver. I have refactored the result of the initial reverse engineering of the
-        <a href="https://www.aegmis.de/">AEG-MIS</a> (now defunct) display control layer, which
-        resulted in a significantly reduced codebase, documented communication protocol, increased
-        framerate, and reduced image flickering. The hardware driver was extracted into a standalone
-        library.
+        I overhauled the C++ BigClock library, originally written at Nottingham Hackspace to drive
+        an <a href="https://www.infotec.co.uk/">Infotec</a> radio clock. I replaced the original
+        Arduino Uno with a Seeed Studio XIAO ESP32C3 for better performance, built-in WiFi, and
+        USB-C. I also reverse-engineered the display protocol, which cut the codebase
+        significantly, eliminated flickering, and quadrupled the framerate. The server exposes an
+        HTTP API that accepts JSON, so the display can be updated with a simple curl command.
 
         [<a class="image" href="./static-data/train-signs/schematic.png">schematic</a>]
         [<a class="image" href="./static-data/train-signs/prototype.jpeg">prototype</a>]
