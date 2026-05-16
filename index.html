@@ -85,13 +85,15 @@
         I brought back a set of old Hull bus terminal signs that Sheffield Hackspace acquired.
         Each of the two text rows is driven by 32 AS1100 LED matrix chips daisy-chained together,
         giving a resolution of 192×9 pixels per row. I replaced the original Arduino Uno with a
-        Seeed Studio XIAO ESP32C3 and rewrote the
+        Seeed Studio XIAO ESP32C3, designed a custom PCB for the control module and rewrote the
         <a href="https://github.com/ConnectedHumber/Bus-Terminal-Signs">original driver</a>
         as a standalone library using Adafruit GFX. The server exposes an HTTP API that accepts
         JSON, so the display can be updated with a simple curl command.
 
         [<a class="image" href="./static-data/bay-indicator/prototype.jpeg">prototype</a>]
         [<a class="image" href="./static-data/bay-indicator/schematic.png">schematic</a>]
+        [<a class="image" href="./static-data/bay-indicator/pcb-1.png">pcb-1</a>]
+        [<a class="image" href="./static-data/bay-indicator/pcb-2.jpeg">pcb-2</a>]
         [<a class="image" href="./static-data/bay-indicator/bay-indicator-1.jpeg">bay-indicator-1</a>]
         [<a class="image" href="./static-data/bay-indicator/bay-indicator-2.jpeg">bay-indicator-2</a>]
         [<a href="https://youtu.be/3BgLUfLRc0o">performance</a>]
