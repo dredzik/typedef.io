@@ -12,21 +12,21 @@ body {
 }
 
 a {
-  color: rgb(102, 207, 252);
+  color: #6bd5ff;
   text-decoration: none;
 }
 
 a.image {
-  color: rgb(149, 252, 203);
+  color: #6bffc8;
 }
 
 a#audio-tape-play {
-  color: rgb(149, 252, 203);
+  color: #6bffc8;
   cursor: pointer;
 }
 
 a.project {
-  color: rgb(237, 116, 112);
+  color: #ff6b6b;
 }
 
 pre {
@@ -43,6 +43,9 @@ section.year + section.year {
 
 p {
   margin-top: 1em;
+}
+
+p.climbing {
 }
 
 audio {
